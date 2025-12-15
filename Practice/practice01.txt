@@ -1,0 +1,6 @@
+문제 1: 온라인 쇼핑몰 테이블 설계
+다음 요구사항에 맞는 테이블을 설계하세요:
+반영 내용 – AUTO_INCREMENT / PRIMARY KEY / FOREIGN KEY / DEFAULT / ON DELETE CASCADE
+상품(products): id, name, price, stock, description
+주문(orders): id, user_id, order_date, total_amount
+주문상세(order_items): order_id, product_id, quantity, price
