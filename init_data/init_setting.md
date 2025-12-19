@@ -11,3 +11,9 @@ mysql -u root –p 1234
 CREATE DATABASE sitesafety_db
 DEFAULT CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
+
+
+# 데이터 셋팅
+docker exec -i {container 이름} mysql -u kdt_user -pkdt1234 sitesafety_db < init_data_sitesafety_db.sql
+*Local : mysql -u kdt_user -pkdt1234 sitesafety_db < init_data_sitesafety_db.sql
+
